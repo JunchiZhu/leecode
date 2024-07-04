@@ -1,0 +1,5 @@
+# ninja log v5
+0	297	1720107431027491922	CMakeFiles/leecode.dir/day_one/day_one.cpp.o	2721f36c2bff76e
+1	339	1720107431068970249	CMakeFiles/leecode.dir/day_two/day_two.cpp.o	9129d9b5c1e4f059
+339	375	1720107431105874710	leecode	1a4c27ad39cf4f7b
+4	270	1720107440462310473	CMakeFiles/leecode.dir/day_one/day_one.cpp.o	2721f36c2bff76e
