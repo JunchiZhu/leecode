@@ -1,5 +1,11 @@
 # ninja log v5
-0	297	1720107431027491922	CMakeFiles/leecode.dir/day_one/day_one.cpp.o	2721f36c2bff76e
-1	339	1720107431068970249	CMakeFiles/leecode.dir/day_two/day_two.cpp.o	9129d9b5c1e4f059
-339	375	1720107431105874710	leecode	1a4c27ad39cf4f7b
-4	270	1720107440462310473	CMakeFiles/leecode.dir/day_one/day_one.cpp.o	2721f36c2bff76e
+1	294	1720148020935801997	CMakeFiles/day_three.dir/day_three/day_three.cpp.o	c9ef1473df9df005
+0	313	1720148020954869161	CMakeFiles/day_one.dir/day_one/day_one.cpp.o	90625cca61789d6c
+296	322	1720148020966209503	day_three	5cceb21e514f6fbd
+1	326	1720148020968326715	CMakeFiles/day_two.dir/day_two/day_two.cpp.o	27d5382e70c5b702
+313	339	1720148020983040247	day_one	b6a083201727e7db
+326	351	1720148020994965079	day_two	818c78df131d4039
+4	422	1720148518227347680	CMakeFiles/day_one.dir/day_one/day_one.cpp.o	a3f0f228b4cf22e5
+422	454	1720148518260431763	day_one	3399ca54ff3bfbf4
+4	289	1720148526305564728	CMakeFiles/day_two.dir/day_two/day_two.cpp.o	2f8eeecbdfe7716
+289	319	1720148526336341768	day_two	2586857876ace4b5

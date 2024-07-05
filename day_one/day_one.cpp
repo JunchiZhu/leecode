@@ -91,13 +91,13 @@ int removeElement_two_pointers_version(vector<int>& nums, int val) {
     return slow_index;
 }
 
-//int main(){
-//    vector<int> q1_numbers = {-1,0,3,5,9,12};
-//    int target = 9;
-//    cout<<binary_search_version_one(q1_numbers, target)<<endl;
-//    cout<<binary_search_version_two(q1_numbers, target)<<endl;
-//
-//    vector<int> q2_numbers = {0,1,2,2,3,0,4,2};
-//    cout<<removeElement_brute_version(q2_numbers, 2)<<endl;
-//    cout<<removeElement_two_pointers_version(q2_numbers, 2)<<endl;
-//}
+int main(){
+    vector<int> q1_numbers = {-1,0,3,5,9,12};
+    int target = 9;
+    cout<<binary_search_version_one(q1_numbers, target)<<endl;
+    cout<<binary_search_version_two(q1_numbers, target)<<endl;
+
+    vector<int> q2_numbers = {0,1,2,2,3,0,4,2};
+    cout<<removeElement_brute_version(q2_numbers, 2)<<endl;
+    cout<<removeElement_two_pointers_version(q2_numbers, 2)<<endl;
+}

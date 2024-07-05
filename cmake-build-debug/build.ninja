@@ -41,54 +41,115 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/zhujunchi/Desktop/leecode/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target leecode
+# Object build statements for EXECUTABLE target day_one
 
 
 #############################################
-# Order-only phony target for leecode
+# Order-only phony target for day_one
 
-build cmake_object_order_depends_target_leecode: phony || CMakeFiles/leecode.dir
+build cmake_object_order_depends_target_day_one: phony || CMakeFiles/day_one.dir
 
-build CMakeFiles/leecode.dir/day_one/day_one.cpp.o: CXX_COMPILER__leecode_unscanned_Debug /Users/zhujunchi/Desktop/leecode/day_one/day_one.cpp || cmake_object_order_depends_target_leecode
-  DEP_FILE = CMakeFiles/leecode.dir/day_one/day_one.cpp.o.d
+build CMakeFiles/day_one.dir/day_one/day_one.cpp.o: CXX_COMPILER__day_one_unscanned_Debug /Users/zhujunchi/Desktop/leecode/day_one/day_one.cpp || cmake_object_order_depends_target_day_one
+  DEP_FILE = CMakeFiles/day_one.dir/day_one/day_one.cpp.o.d
   FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/leecode.dir
-  OBJECT_FILE_DIR = CMakeFiles/leecode.dir/day_one
-  TARGET_COMPILE_PDB = CMakeFiles/leecode.dir/
-  TARGET_PDB = leecode.pdb
-
-build CMakeFiles/leecode.dir/day_two/day_two.cpp.o: CXX_COMPILER__leecode_unscanned_Debug /Users/zhujunchi/Desktop/leecode/day_two/day_two.cpp || cmake_object_order_depends_target_leecode
-  DEP_FILE = CMakeFiles/leecode.dir/day_two/day_two.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/leecode.dir
-  OBJECT_FILE_DIR = CMakeFiles/leecode.dir/day_two
-  TARGET_COMPILE_PDB = CMakeFiles/leecode.dir/
-  TARGET_PDB = leecode.pdb
+  OBJECT_DIR = CMakeFiles/day_one.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_one.dir/day_one
+  TARGET_COMPILE_PDB = CMakeFiles/day_one.dir/
+  TARGET_PDB = day_one.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target leecode
+# Link build statements for EXECUTABLE target day_one
 
 
 #############################################
-# Link the executable leecode
+# Link the executable day_one
 
-build leecode: CXX_EXECUTABLE_LINKER__leecode_Debug CMakeFiles/leecode.dir/day_one/day_one.cpp.o CMakeFiles/leecode.dir/day_two/day_two.cpp.o
+build day_one: CXX_EXECUTABLE_LINKER__day_one_Debug CMakeFiles/day_one.dir/day_one/day_one.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
-  OBJECT_DIR = CMakeFiles/leecode.dir
+  OBJECT_DIR = CMakeFiles/day_one.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/leecode.dir/
-  TARGET_FILE = leecode
-  TARGET_PDB = leecode.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/day_one.dir/
+  TARGET_FILE = day_one
+  TARGET_PDB = day_one.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_two
+
+
+#############################################
+# Order-only phony target for day_two
+
+build cmake_object_order_depends_target_day_two: phony || CMakeFiles/day_two.dir
+
+build CMakeFiles/day_two.dir/day_two/day_two.cpp.o: CXX_COMPILER__day_two_unscanned_Debug /Users/zhujunchi/Desktop/leecode/day_two/day_two.cpp || cmake_object_order_depends_target_day_two
+  DEP_FILE = CMakeFiles/day_two.dir/day_two/day_two.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/day_two.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_two.dir/day_two
+  TARGET_COMPILE_PDB = CMakeFiles/day_two.dir/
+  TARGET_PDB = day_two.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_two
+
+
+#############################################
+# Link the executable day_two
+
+build day_two: CXX_EXECUTABLE_LINKER__day_two_Debug CMakeFiles/day_two.dir/day_two/day_two.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/day_two.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/day_two.dir/
+  TARGET_FILE = day_two
+  TARGET_PDB = day_two.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_three
+
+
+#############################################
+# Order-only phony target for day_three
+
+build cmake_object_order_depends_target_day_three: phony || CMakeFiles/day_three.dir
+
+build CMakeFiles/day_three.dir/day_three/day_three.cpp.o: CXX_COMPILER__day_three_unscanned_Debug /Users/zhujunchi/Desktop/leecode/day_three/day_three.cpp || cmake_object_order_depends_target_day_three
+  DEP_FILE = CMakeFiles/day_three.dir/day_three/day_three.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/day_three.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_three.dir/day_three
+  TARGET_COMPILE_PDB = CMakeFiles/day_three.dir/
+  TARGET_PDB = day_three.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_three
+
+
+#############################################
+# Link the executable day_three
+
+build day_three: CXX_EXECUTABLE_LINKER__day_three_Debug CMakeFiles/day_three.dir/day_three/day_three.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/day_three.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/day_three.dir/
+  TARGET_FILE = day_three
+  TARGET_PDB = day_three.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/zhujunchi/Desktop/leecode/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /Users/zhujunchi/Desktop/leecode/cmake-build-debug && /opt/homebrew/Cellar/cmake/3.30.0/bin/ccmake -S/Users/zhujunchi/Desktop/leecode -B/Users/zhujunchi/Desktop/leecode/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -116,7 +177,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/zhujunchi/Desktop/leecode/cmake-build-debug
 
-build all: phony leecode
+build all: phony day_one day_two day_three
 
 # =============================================================================
 # Built-in targets
