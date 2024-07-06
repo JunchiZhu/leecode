@@ -13,3 +13,7 @@ add_executable(day_two day_two/day_two.cpp)
 add_executable(day_three day_three/day_three.cpp)
 add_executable(day_three_recursive day_three/recursive_test.cpp
         day_three/recursive_test.cpp)
+
+# Add executable for day_four
+add_executable(day_four day_four/day_four.cpp
+        day_four/day_four.cpp)
