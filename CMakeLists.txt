@@ -17,3 +17,8 @@ add_executable(day_three_recursive day_three/recursive_test.cpp
 # Add executable for day_four
 add_executable(day_four day_four/day_four.cpp
         day_four/day_four.cpp)
+
+
+# Add executable for day_six
+add_executable(day_six day_six/day_six.cpp
+        day_six/day_six.cpp)
