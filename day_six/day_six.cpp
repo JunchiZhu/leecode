@@ -86,6 +86,18 @@ vector<int> twoSum(vector<int>& nums, int target) {
 
 }
 
+vector<vector<int>> threeSum(vector<int>& nums) {
+
+}
+
+void matrix_printer(const vector<vector<int>>& temp){
+    for(const auto& row:temp){
+        for(auto ele:row){
+            cout<< ele << ", ";
+        }
+        cout<<endl;
+    }
+}
 
 int main(){
     string q1_test1_str ="rat";
@@ -100,7 +112,6 @@ int main(){
 
     int q3_number = 19;
     cout<<isHappy(q3_number)<<endl;
-
     vector<int>q4_input = {3,2,4};
     vector<int>q4_ans = twoSum(q4_input, 6);
     vector_printer(q4_ans);
