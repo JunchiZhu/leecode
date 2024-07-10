@@ -6,14 +6,14 @@
 #include <algorithm>
 using namespace std;
 
-void vector_printer(vector<int> temp){
+void vector_printer(const vector<int>& temp){
     for(auto ele:temp){
         cout<< ele << ", ";
     }
 }
 
-void matrix_printer(vector<vector<int>> temp){
-    for(auto row:temp){
+void matrix_printer(const vector<vector<int>>& temp){
+    for(const auto& row:temp){
         for(auto ele:row){
             cout<< ele << ", ";
         }
