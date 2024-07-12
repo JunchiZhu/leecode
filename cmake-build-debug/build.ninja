@@ -288,6 +288,68 @@ build day_eight: CXX_EXECUTABLE_LINKER__day_eight_Debug CMakeFiles/day_eight.dir
   TARGET_FILE = day_eight
   TARGET_PDB = day_eight.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target day_nine
+
+
+#############################################
+# Order-only phony target for day_nine
+
+build cmake_object_order_depends_target_day_nine: phony || CMakeFiles/day_nine.dir
+
+build CMakeFiles/day_nine.dir/day_nine/day_nine.cpp.o: CXX_COMPILER__day_nine_unscanned_Debug /Users/zhujunchi/Desktop/leecode/day_nine/day_nine.cpp || cmake_object_order_depends_target_day_nine
+  DEP_FILE = CMakeFiles/day_nine.dir/day_nine/day_nine.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/day_nine.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_nine.dir/day_nine
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_nine
+
+
+#############################################
+# Link the executable day_nine
+
+build day_nine: CXX_EXECUTABLE_LINKER__day_nine_Debug CMakeFiles/day_nine.dir/day_nine/day_nine.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/day_nine.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_nine
+  TARGET_PDB = day_nine.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_ten
+
+
+#############################################
+# Order-only phony target for day_ten
+
+build cmake_object_order_depends_target_day_ten: phony || CMakeFiles/day_ten.dir
+
+build CMakeFiles/day_ten.dir/day_ten/day_ten.cpp.o: CXX_COMPILER__day_ten_unscanned_Debug /Users/zhujunchi/Desktop/leecode/day_ten/day_ten.cpp || cmake_object_order_depends_target_day_ten
+  DEP_FILE = CMakeFiles/day_ten.dir/day_ten/day_ten.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/day_ten.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_ten.dir/day_ten
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_ten
+
+
+#############################################
+# Link the executable day_ten
+
+build day_ten: CXX_EXECUTABLE_LINKER__day_ten_Debug CMakeFiles/day_ten.dir/day_ten/day_ten.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/day_ten.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_ten
+  TARGET_PDB = day_ten.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -323,7 +385,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/zhujunchi/Desktop/leecode/cmake-build-debug
 
-build all: phony day_one day_two day_three day_three_recursive day_four day_six day_seven day_eight
+build all: phony day_one day_two day_three day_three_recursive day_four day_six day_seven day_eight day_nine day_ten
 
 # =============================================================================
 # Built-in targets

@@ -26,3 +26,12 @@ add_executable(day_seven day_seven/day_seven.cpp)
 # Add executable for day_eight
 add_executable(day_eight day_eight/day_eight.cpp
         day_eight/day_eight.cpp)
+
+# Add executable for day_nine
+add_executable(day_nine day_nine/day_nine.cpp
+        day_nine/day_nine.cpp)
+
+# Add executable for day_ten
+add_executable(day_ten day_ten/day_ten.cpp
+        day_ten/day_ten.cpp
+        day_ten/day_ten.cpp)

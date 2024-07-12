@@ -6,5 +6,7 @@
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_six.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_seven.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_eight.dir
+/Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_nine.dir
+/Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_ten.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
