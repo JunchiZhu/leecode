@@ -25,7 +25,8 @@ add_executable(day_seven day_seven/day_seven.cpp)
 
 # Add executable for day_eight
 add_executable(day_eight day_eight/day_eight.cpp
-        day_eight/day_eight.cpp)
+        day_eight/day_eight.cpp
+        day_twelve/day_twelve.cpp)
 
 # Add executable for day_nine
 add_executable(day_nine day_nine/day_nine.cpp
@@ -35,3 +36,15 @@ add_executable(day_nine day_nine/day_nine.cpp
 add_executable(day_ten day_ten/day_ten.cpp
         day_ten/day_ten.cpp
         day_ten/day_ten.cpp)
+
+# Add executable for day_eleven
+add_executable(day_eleven day_eleven/day_eleven.cpp
+        day_eleven/day_eleven.cpp
+        treenode.h)
+
+# Add executable for day_twelve
+add_executable(day_twelve day_twelve/day_twelve.cpp
+        day_twelve/day_twelve.cpp
+        day_twelve/day_twelve.cpp
+        day_twelve/day_twelve.cpp
+        treenode.h)
