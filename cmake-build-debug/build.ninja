@@ -480,6 +480,37 @@ build day_fourteen: CXX_EXECUTABLE_LINKER__day_fourteen_Debug CMakeFiles/day_fou
   TARGET_FILE = day_fourteen
   TARGET_PDB = day_fourteen.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target day_fifteen
+
+
+#############################################
+# Order-only phony target for day_fifteen
+
+build cmake_object_order_depends_target_day_fifteen: phony || CMakeFiles/day_fifteen.dir
+
+build CMakeFiles/day_fifteen.dir/day_fifteen/day_fifteen.cpp.o: CXX_COMPILER__day_fifteen_unscanned_Debug /Users/zhujunchi/Desktop/leecode/day_fifteen/day_fifteen.cpp || cmake_object_order_depends_target_day_fifteen
+  DEP_FILE = CMakeFiles/day_fifteen.dir/day_fifteen/day_fifteen.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/day_fifteen.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_fifteen.dir/day_fifteen
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_fifteen
+
+
+#############################################
+# Link the executable day_fifteen
+
+build day_fifteen: CXX_EXECUTABLE_LINKER__day_fifteen_Debug CMakeFiles/day_fifteen.dir/day_fifteen/day_fifteen.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/day_fifteen.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_fifteen
+  TARGET_PDB = day_fifteen.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -515,7 +546,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/zhujunchi/Desktop/leecode/cmake-build-debug
 
-build all: phony day_one day_two day_three day_three_recursive day_four day_six day_seven day_eight day_nine day_ten day_eleven day_twelve day_thirteen day_fourteen
+build all: phony day_one day_two day_three day_three_recursive day_four day_six day_seven day_eight day_nine day_ten day_eleven day_twelve day_thirteen day_fourteen day_fifteen
 
 # =============================================================================
 # Built-in targets

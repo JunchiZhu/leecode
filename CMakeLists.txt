@@ -53,3 +53,7 @@ add_executable(day_fourteen day_fourteen/day_fourteen.cpp
         treenode.h
         linkedlist.h
         linkedlist.h)
+
+add_executable(day_fifteen day_fifteen/day_fifteen.cpp
+        linkedlist.h
+        day_fifteen/day_fifteen.cpp)
