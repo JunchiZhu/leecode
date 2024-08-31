@@ -3,15 +3,10 @@
 //
 #include <iostream>
 #include <vector>
+#include "../linkedlist.h"
 using namespace std;
 
-class ListNode{
-public:
-    int val;
-    ListNode* next;
-    ListNode():val(0),next(nullptr){}
-    ListNode(int value, ListNode* point = nullptr):val(value),next(point){}
-};
+
 
 void printList(ListNode* head) {
     ListNode* current = head;

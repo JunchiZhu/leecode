@@ -31,11 +31,6 @@ TreeNode* invertTree(TreeNode* root) {
     return root;
 }
 
-//bool isSymmetric(TreeNode* root) {
-//
-//}
-
-
 void traversal(TreeNode* root, vector<int> store){
     if(root== nullptr){
         return;
@@ -190,15 +185,30 @@ int maxDepth(TreeNode* root) {
     return answer;
 }
 
+int minDepth(TreeNode* root) {
+    if(root== nullptr){return 0;}
+    int left = minDepth(root->left);
+    int right = minDepth(root->right);
+
+    if(root->left == nullptr and root->right!= nullptr){
+        return 1+right;
+    }
+    else if(root->left != nullptr and root->right== nullptr){
+        return 1+left;
+    }
+
+    int answer=min(left, right)+1;
+    return answer;
+}
+
 
 int main(){
     TreeNode* root = new TreeNode(1);
-    root->left = new TreeNode(2, nullptr, new TreeNode(3));
-    root->right = new TreeNode(2, nullptr, new TreeNode(3));
+    root->left = new TreeNode(2, nullptr, new TreeNode(2, nullptr, new TreeNode(3)));
 
     // Test the maxDepth function
-    int depth = maxDepth(root);
-    cout << "The maximum depth of the tree is: " << depth << endl;
+    int depth = minDepth(root);
+    cout << "The minimum depth of the tree is: " << depth << endl;
 
     // Clean up memory
     delete root->left->right;

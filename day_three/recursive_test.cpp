@@ -2,16 +2,9 @@
 // Created by 朱俊驰 on 7/5/24.
 //
 #include <iostream>
+#include "../linkedlist.h"
 
-// Definition for singly-linked list.
-class ListNode {
-public:
-    int val;
-    ListNode* next;
 
-    ListNode(int value, ListNode *node = nullptr) : val(value), next(node) {}
-    ListNode() : val(0), next(nullptr) {}
-};
 
 class Solution {
 public:
