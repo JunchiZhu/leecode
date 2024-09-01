@@ -57,3 +57,6 @@ add_executable(day_fourteen day_fourteen/day_fourteen.cpp
 add_executable(day_fifteen day_fifteen/day_fifteen.cpp
         linkedlist.h
         day_fifteen/day_fifteen.cpp)
+
+add_executable(day_sixteen day_sixteen/day_sixteen.cpp
+        linkedlist.h)
