@@ -76,17 +76,56 @@ vector<int> preorderTraversal_none_recursive(TreeNode* root) {
     stack<TreeNode*> my_stack;
     if(root!= nullptr){my_stack.push(root);}
     while (!my_stack.empty()){
-        TreeNode *node =  my_stack.top();
+        TreeNode* node = my_stack.top();
         my_stack.pop();
-        if(node->right!= nullptr){
+        if(node->right){
             my_stack.push(node->right);
         }
-        if(node->left!= nullptr){
+        if(node->left){
             my_stack.push(node->left);
         }
         store.push_back(node->val);
     }
+    return store;
+}
 
+vector<int> inorderTraversal_none_recursive(TreeNode* root) {
+    vector<int> store;
+    stack<TreeNode*> my_stack;
+    TreeNode* cur = root;
+    while((cur != nullptr) or !my_stack.empty())
+        if(cur != nullptr){
+            my_stack.push(cur);
+            cur = cur->left;
+        } else{
+            TreeNode* node = my_stack.top();
+            my_stack.pop();
+            store.push_back(node->val);
+            cur=cur->right;
+        }
+
+    return store;
+}
+
+vector<int> postorderTraversal_none_recursive(TreeNode* root) {
+    vector<int> store;
+    stack<TreeNode*> my_stack;
+    if(root){
+        my_stack.push(root);
+    }
+    while(!my_stack.empty()){
+        TreeNode* node = my_stack.top();
+        my_stack.pop();
+
+        if(node->left){
+            my_stack.push(node->left);
+        }
+        if(node->right){
+            my_stack.push(node->right);
+        }
+        store.push_back(node->val);
+    }
+    reverse(store.begin(), store.end());
     return store;
 }
 

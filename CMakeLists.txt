@@ -60,3 +60,11 @@ add_executable(day_fifteen day_fifteen/day_fifteen.cpp
 
 add_executable(day_sixteen day_sixteen/day_sixteen.cpp
         linkedlist.h)
+
+add_executable(day_seventeen_tree2 day_seventeen_tree2/day_seventeen_tree2.cpp
+        treenode.h)
+
+add_executable(day_seventeen_hash day_seventeen_hash/day_seventeen_hash.cpp
+        day_seventeen_hash/day_seventeen_hash.cpp
+        helper.h
+        helper.h)
