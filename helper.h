@@ -23,4 +23,14 @@ void vector_printer(const std::vector<T>& my_vector) {
     std::cout << std::endl;
 }
 
+
+template <typename T>
+void matrix_printer(const std::vector<std::vector<T>>& my_matrix) {
+    for (const auto& row : my_matrix) {
+        for (const auto& ele : row) {
+            std::cout << ele << " ";
+        }
+        std::cout << std::endl;
+    }
+}
 #endif //LEECODE_HELPER_H
