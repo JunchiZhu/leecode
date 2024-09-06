@@ -5,10 +5,10 @@
 #ifndef LEECODE_HELPER_H
 #define LEECODE_HELPER_H
 
-#include "vector"
-#include "iostream"
-#include "string"
 #include <iostream>
+#include <string>
+#include <cctype>
+#include <vector>
 #include <unordered_map>
 #include <set>
 #include <unordered_set>

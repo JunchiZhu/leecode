@@ -67,3 +67,6 @@ add_executable(day_seventeen_hash day_seventeen_hash/day_seventeen_hash.cpp
 
 add_executable(day_eighteen day_eighteen/day_eighteen.cpp
         helper.h)
+
+add_executable(day_nineteen day_nineteen/day_nineteen.cpp
+        helper.h)
