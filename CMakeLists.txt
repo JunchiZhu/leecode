@@ -70,3 +70,6 @@ add_executable(day_eighteen day_eighteen/day_eighteen.cpp
 
 add_executable(day_nineteen day_nineteen/day_nineteen.cpp
         helper.h)
+
+add_executable(day_twenty day_twenty/day_twenty.cpp
+        helper.h)
