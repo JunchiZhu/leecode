@@ -7,88 +7,90 @@
 #include <stack>
 #include <queue>
 #include <string>
+#include "../stack.h"
+#include "../queue.h"
 using namespace std;
-
-
-class MyQueue {
-public:
-    stack<int> inStack;
-    stack<int> outStack;
-
-    MyQueue() = default;
-
-
-    void push(int x) {
-        inStack.push(x);
-    }
-
-    int pop() {
-        if(outStack.empty()){
-            while (!inStack.empty()){
-                int value = inStack.top();
-                inStack.pop();
-                outStack.push(value);
-            }
-        }
-        int ans = outStack.top();
-        outStack.pop();
-        return ans;
-    }
-
-    int peek() {
-        int value = pop();
-        outStack.push(value);
-        return value;
-    }
-
-    bool empty() const {
-        if(inStack.empty() && outStack.empty()){
-            return true;
-        }
-        return false;
-    }
-};
-
-class MyStack {
-public:
-    queue<int> inQueue;
-    queue<int> outQueue;
-    MyStack() = default;
-
-    void push(int x) {
-        inQueue.push(x);
-    }
-
-    int pop() {
-        int size = inQueue.size();
-        while (size>1){
-            int temp = inQueue.front();
-            inQueue.pop();
-            outQueue.push(temp);
-            size-=1;
-        }
-        int ans = inQueue.front();
-        inQueue.pop();
-
-        inQueue = outQueue;
-//        while (!outQueue.empty()) { // 清空que2
-//            outQueue.pop();
+//
+//
+//class MyQueue {
+//public:
+//    stack<int> inStack;
+//    stack<int> outStack;
+//
+//    MyQueue() = default;
+//
+//
+//    void push(int x) {
+//        inStack.push(x);
+//    }
+//
+//    int pop() {
+//        if(outStack.empty()){
+//            while (!inStack.empty()){
+//                int value = inStack.top();
+//                inStack.pop();
+//                outStack.push(value);
+//            }
 //        }
-
-        return ans;
-    }
-
-    int top() {
-        return inQueue.back();
-    }
-
-    bool empty() {
-        if(inQueue.empty()){
-            return true;
-        }
-        return false;
-    }
-};
+//        int ans = outStack.top();
+//        outStack.pop();
+//        return ans;
+//    }
+//
+//    int peek() {
+//        int value = pop();
+//        outStack.push(value);
+//        return value;
+//    }
+//
+//    bool empty() const {
+//        if(inStack.empty() && outStack.empty()){
+//            return true;
+//        }
+//        return false;
+//    }
+//};
+//
+//class MyStack {
+//public:
+//    queue<int> inQueue;
+//    queue<int> outQueue;
+//    MyStack() = default;
+//
+//    void push(int x) {
+//        inQueue.push(x);
+//    }
+//
+//    int pop() {
+//        int size = inQueue.size();
+//        while (size>1){
+//            int temp = inQueue.front();
+//            inQueue.pop();
+//            outQueue.push(temp);
+//            size-=1;
+//        }
+//        int ans = inQueue.front();
+//        inQueue.pop();
+//
+//        inQueue = outQueue;
+////        while (!outQueue.empty()) { // 清空que2
+////            outQueue.pop();
+////        }
+//
+//        return ans;
+//    }
+//
+//    int top() {
+//        return inQueue.back();
+//    }
+//
+//    bool empty() {
+//        if(inQueue.empty()){
+//            return true;
+//        }
+//        return false;
+//    }
+//};
 
 bool isValid(string s) {
     stack<char> store1;
