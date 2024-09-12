@@ -78,3 +78,23 @@ add_executable(day_twenty_one day_twenty_one/day_twenty_one.cpp
         helper.h
         stack.h
         queue.h)
+
+add_executable(day_twenty_two day_twenty_two/day_twenty_two.cpp
+        helper.h
+        stack.h
+        queue.h)
+
+add_executable(day_twenty_three day_twenty_three/day_twenty_three.cpp
+        helper.h
+        stack.h
+        queue.h)
+
+add_executable(day_twenty_four day_twenty_four/day_twenty_four.cpp
+        helper.h
+        stack.h
+        queue.h)
+
+add_executable(day_twenty_five day_twenty_five/day_twenty_five.cpp
+        helper.h
+        stack.h
+        queue.h)
