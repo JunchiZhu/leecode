@@ -5,47 +5,53 @@
 #ifndef LEECODE_STACK_H
 #define LEECODE_STACK_H
 #include "helper.h"
-
+// 1 2 3 4 1 2 3 -> 1
+// 4 1 2 3 -> 1
+// 4 -> 4
+// 3
+// 2
+// 1
 class MyStack {
 public:
-    MyStack() = default;
-    queue<int> my_queue;
+    MyStack()=default;
+    queue<int>my_queue;
 
-    //
     void push(int x) {
         my_queue.push(x);
     }
 
     int pop() {
-        int size = my_queue.size()-1;
-        while (size--){
-            int value = my_queue.front();
+        int size =my_queue.size();
+        size-=1;
+        while(size--){
+            int temp = my_queue.front();
             my_queue.pop();
-            my_queue.push(value);
+            my_queue.push(temp);
         }
-
-        int value = my_queue.front();
+        int answer = my_queue.front();
         my_queue.pop();
-        return value;
+        return answer;
     }
 
     int top() {
-        int size = my_queue.size()-1;
-        while (size--){
-            int value = my_queue.front();
-            my_queue.push(value);
+        int size =my_queue.size();
+        size-=1;
+        while(size--){
+            int temp = my_queue.front();
             my_queue.pop();
+            my_queue.push(temp);
         }
-
-        int value = my_queue.front();
-        my_queue.push(value);
+        int answer = my_queue.front();
         my_queue.pop();
-        return value;
-
+        my_queue.push(answer);
+        return answer;
     }
 
     bool empty() {
-        return my_queue.empty();
+        if(my_queue.empty()){
+            return true;
+        }
+        return false;
     }
 };
 

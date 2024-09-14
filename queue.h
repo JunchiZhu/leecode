@@ -20,23 +20,21 @@ public:
     }
 
     int pop() {
-        int answer = peek();
+        int temp_value = peek();
         out_stack.pop();
-        return answer;
+        return temp_value;
     }
 
     int peek() {
         if(out_stack.empty()){
-            while (!in_stack.empty()){
+            while(!in_stack.empty()){
                 int value = in_stack.top();
-                out_stack.push(value);
                 in_stack.pop();
+                out_stack.push(value);
             }
-
         }
-        int answer = out_stack.top();
 
-        return answer;
+        return out_stack.top();
     }
 
     bool empty() {

@@ -15,6 +15,7 @@
 #include <stack>
 #include <queue>
 #include <cmath>
+#include <algorithm>
 
 using namespace std;
 template <typename T>

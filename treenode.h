@@ -14,4 +14,30 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
+template <typename T>
+vector<vector<T>> levelOrder(TreeNode* root){
+    queue<TreeNode*> my_queue;
+    if(root){
+        my_queue.push(root);
+    }
+    vector<vector<T>>store;
+    while(!my_queue.empty()){
+        vector<T> each_line;
+        int size = my_queue.size();
+        for(int i=0;i<size;++i){
+            TreeNode* node = my_queue.front();
+            my_queue.pop();
+            each_line.push_back(node->val);
+            if(node->left){
+                my_queue.push(node->left);
+            }
+            if(node->right){
+                my_queue.push(node->right);
+            }
+        }
+        store.push_back(each_line);
+    }
+    return store;
+}
+
 #endif //LEECODE_TREENODE_H

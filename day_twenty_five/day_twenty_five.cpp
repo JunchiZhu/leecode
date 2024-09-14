@@ -142,13 +142,103 @@ int findBottomLeftValue_recursively(TreeNode* root) {
     return result;
 }
 
-int main(){
-    TreeNode* left_tree = new TreeNode(4, new TreeNode(11, new TreeNode(7), new TreeNode(2)), nullptr);
-    TreeNode* right_tree = new TreeNode(8, new TreeNode(13), new TreeNode(4, nullptr, new TreeNode(1)));
-    TreeNode* root = new TreeNode(5, left_tree, right_tree);
+int getdepth(TreeNode* node) {
+    if (node == NULL) return 0;
+    int leftdepth = getdepth(node->left);       // 左
+    int rightdepth = getdepth(node->right);     // 右
+    int depth = 1 + max(leftdepth, rightdepth); // 中
+    return depth;
+}
+int Depth(TreeNode* root) {
+    return getdepth(root);
+}
 
-    TreeNode* left_tree2 = new TreeNode(1, nullptr, nullptr);
-    TreeNode* right_tree2 = new TreeNode(3, nullptr, nullptr);
-    TreeNode* root2 = new TreeNode(2, left_tree2, right_tree2);
-    cout<<findBottomLeftValue(root2)<<endl;
+int result1;
+int max_value = INT_MIN;
+void GetDepth(TreeNode* root, int depth){
+    if(root->left==nullptr and root->right==nullptr){
+        if(depth>max_value){
+            max_value = depth;
+            result1 = root->val;
+            return;
+        }
+    }
+    if(root->left){
+        depth+=1;
+        GetDepth(root->left, depth);
+        depth-=1;
+    }
+    if(root->right){
+        depth+=1;
+        GetDepth(root->right, depth);
+        depth-=1;
+    }
+
+}
+int findBottomLeftValue_2(TreeNode* root) {
+    GetDepth(root, 0);
+    return result1;
+}
+// 后序 左右中 9,15,7,20,3
+// 中序 左中右 9,3,15,20,7
+//
+
+TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+    if(inorder.empty()){return nullptr;}
+    else{
+        int root_value = postorder[postorder.size()-1];
+        TreeNode* root = new TreeNode(root_value);
+
+        auto iter = find(inorder.begin(),inorder.end(),root_value);
+        int index = distance(inorder.begin(), iter);
+
+        vector<int> inorder_left = std::vector<int>(inorder.begin() , inorder.begin() + index);
+        vector<int> inorder_right = std::vector<int>(inorder.begin() + index+1, inorder.end());
+
+        postorder.resize(postorder.size()-1);
+        vector<int> postorder_left = std::vector<int>(postorder.begin(), postorder.begin()+inorder_left.size());
+        vector<int> postorder_right = std::vector<int>(postorder.begin()+inorder_left.size(), postorder.end());
+
+        root->left = buildTree(inorder_left, postorder_left);
+        root->right = buildTree(inorder_right, postorder_right);
+        return root;
+    }
+}
+
+TreeNode* buildTree_2(vector<int>& preorder, vector<int>& inorder) {
+    if(preorder.empty()){return nullptr;}
+    int root_value = preorder[0];
+    TreeNode* root = new TreeNode(root_value);
+
+    auto iter = std::find(inorder.begin(), inorder.end(),root_value);
+    int index = distance(inorder.begin(),iter);
+    vector<int> inorder_left = std::vector<int>(inorder.begin(),inorder.begin()+index);
+    vector<int> inorder_right = std::vector<int>(inorder.begin()+index+1,inorder.end());
+
+    preorder.erase(preorder.begin());
+    vector<int> preorder_left = std::vector<int>(preorder.begin(),preorder.begin()+inorder_left.size());
+    vector<int> preorder_right = std::vector<int>(preorder.begin()+inorder_left.size(),preorder.end());
+
+    root->left= buildTree_2(preorder_left, inorder_left);
+    root->right= buildTree_2(preorder_right, inorder_right);
+
+    return root;
+}
+
+int main(){
+    TreeNode* left_tree = new TreeNode(3,  new TreeNode(4),  new TreeNode(5));
+    TreeNode* right_tree = new TreeNode(2);
+    TreeNode* root = new TreeNode(1, left_tree, right_tree);
+    matrix_printer(levelOrder<int>(root));
+    cout<<findBottomLeftValue_2(root)<<endl;
+
+    vector<int>preorder = {3,9,20,15,7};
+    vector<int>inorder = {9,3,15,20,7};
+    vector<int>postorder = {9,15,7,20,3};
+
+    TreeNode* root2 = buildTree(inorder, postorder);
+    matrix_printer(levelOrder<int>(root2));
+    cout<<endl;
+    TreeNode* root3 = buildTree_2(preorder, inorder);
+    matrix_printer(levelOrder<int>(root3));
 }
