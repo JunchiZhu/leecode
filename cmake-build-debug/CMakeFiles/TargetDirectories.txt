@@ -25,6 +25,5 @@
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_twenty_four.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_twenty_five.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_twenty_six.dir
-/Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_twenty_seven.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
