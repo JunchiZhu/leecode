@@ -1,15 +1,15 @@
 # ninja log v5
 425	457	1720166555178976653	day_three	f766924838a29094
-4	497	1720250377221599711	CMakeFiles/day_four.dir/day_four/day_four.cpp.o	2a75c6e975fd950f
 443	593	1720170469016074805	day_three_recursive	83111352c907c9a6
+4	497	1720250377221599711	CMakeFiles/day_four.dir/day_four/day_four.cpp.o	2a75c6e975fd950f
+4	492	1722785674316136279	CMakeFiles/day_twelve.dir/day_twelve/day_twelve.cpp.o	5e7e4219198410f0
+289	319	1720148526336341768	day_two	2586857876ace4b5
 4	444	1722567786792025321	CMakeFiles/day_nine.dir/day_nine/day_nine.cpp.o	3d6300eb72272c29
 579	722	1725357710847544605	day_seventeen_hash	7a6a2b93d1d942dd
-4	394	1720828103315125192	CMakeFiles/day_ten.dir/day_ten/day_ten.cpp.o	b832044dfe189a34
-306	339	1725075581761291053	day_fifteen	787682da0f43d5de
-497	529	1725765156334316638	day_twenty_one	485eb932a1d9ace2
 475	508	1720597841960526737	day_eight	ba99f0e3cbece3e5
-289	319	1720148526336341768	day_two	2586857876ace4b5
-4	492	1722785674316136279	CMakeFiles/day_twelve.dir/day_twelve/day_twelve.cpp.o	5e7e4219198410f0
+497	529	1725765156334316638	day_twenty_one	485eb932a1d9ace2
+306	339	1725075581761291053	day_fifteen	787682da0f43d5de
+4	394	1720828103315125192	CMakeFiles/day_ten.dir/day_ten/day_ten.cpp.o	b832044dfe189a34
 497	531	1720250377256068330	day_four	39d891f3e073c864
 510	544	1726108982605276740	day_twenty_four	e8543763c8e48a9d
 4	595	1726396742228562367	CMakeFiles/day_twenty_six.dir/day_twenty_six/day_twenty_six.cpp.o	44e9eaae908d2e2e
@@ -28,7 +28,7 @@
 595	649	1726396742286166879	day_twenty_six	3f8511c6fe1a7cf6
 4	576	1725724950626247876	CMakeFiles/day_twenty.dir/day_twenty/day_twenty.cpp.o	59daa27f62a3b84e
 344	372	1722943083563453978	day_thirteen	5361a3777b230018
-0	58	1726431769683879779	build.ninja	e854c3daa6d0bf93
+0	58	1726431833584707450	build.ninja	e854c3daa6d0bf93
 5	497	1725765156300626312	CMakeFiles/day_twenty_one.dir/day_twenty_one/day_twenty_one.cpp.o	c33a5fcec8dfab2b
 3	431	1725589405341970518	CMakeFiles/day_nineteen.dir/day_nineteen/day_nineteen.cpp.o	b07962b3bf87274a
 3	383	1725552563615116677	CMakeFiles/day_eighteen.dir/day_eighteen/day_eighteen.cpp.o	7a174372c2b699e0
@@ -48,8 +48,8 @@
 5	3611	1722771676761879251	CMakeFiles/day_eight.dir/day_twelve/day_twelve.cpp.o	108e85b47fd3e38c
 4	510	1726108982569802278	CMakeFiles/day_twenty_four.dir/day_twenty_four/day_twenty_four.cpp.o	5137bb8cb231b7de
 3	344	1722943083533940943	CMakeFiles/day_thirteen.dir/day_thirteen/day_thirteen.cpp.o	c5265a7b120fa814
+4	3572	1722771676721579593	CMakeFiles/day_eight.dir/day_eight/day_eight.cpp.o	3c156ed9677f0da0
 474	505	1725810381076921374	day_twenty_two	1ca9ef7b61327b91
 576	760	1725724950810241474	day_twenty	27423112c98d55b9
-431	463	1725589405374628521	day_nineteen	59d8f7356b1b6f81
 4	425	1720166555145708544	CMakeFiles/day_three.dir/day_three/day_three.cpp.o	263c75f70b69b634
-4	3572	1722771676721579593	CMakeFiles/day_eight.dir/day_eight/day_eight.cpp.o	3c156ed9677f0da0
+431	463	1725589405374628521	day_nineteen	59d8f7356b1b6f81
