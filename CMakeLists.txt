@@ -98,3 +98,7 @@ add_executable(day_twenty_five day_twenty_five/day_twenty_five.cpp
         helper.h
         stack.h
         queue.h)
+
+add_executable(day_twenty_six day_twenty_six/day_twenty_six.cpp
+        helper.h)
+
