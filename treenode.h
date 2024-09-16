@@ -40,4 +40,12 @@ vector<vector<T>> levelOrder(TreeNode* root){
     return store;
 }
 
+TreeNode* createTree(const std::vector<int>& nodes, int i) {
+    if (i >= nodes.size() || nodes[i] == NULL) return NULL;
+    TreeNode* root = new TreeNode(nodes[i]);
+    root->left = createTree(nodes, 2 * i + 1);
+    root->right = createTree(nodes, 2 * i + 2);
+    return root;
+}
+
 #endif //LEECODE_TREENODE_H

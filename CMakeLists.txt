@@ -105,3 +105,5 @@ add_executable(day_twenty_six day_twenty_six/day_twenty_six.cpp
 add_executable(day_twenty_seven day_twenty_seven/day_twenty_seven.cpp
         helper.h)
 
+add_executable(day_twenty_eight day_twenty_eight/day_twenty_eight.cpp
+        helper.h)
