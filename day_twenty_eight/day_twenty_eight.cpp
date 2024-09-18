@@ -30,7 +30,6 @@ TreeNode* insertIntoBST_recursively(TreeNode* root, int val) {
         auto* node = new TreeNode(val);
         return node;
     }
-
     if(root->val>val){
         root->left = insertIntoBST_recursively(root->left, val);
     }
