@@ -4,26 +4,26 @@
 
 #include "../helper.h"
 #include "../treenode.h"
-int result;
-void getDepth(TreeNode* root, int depth){
-    if(result>depth){
-        result = result;
-    } else{result=depth;}
-    if(root->left== nullptr and root->right == nullptr){
-        return;
-    }
-    if(root->left){
-        depth+=1;
-        getDepth(root->left, depth);
-        depth-=1;
-    }
-    if(root->right){
-        depth+=1;
-        getDepth(root->right, depth);
-        depth-=1;
-    }
-    return;
-}
+//int result;
+//void getDepth(TreeNode* root, int depth){
+//    if(result>depth){
+//        result = result;
+//    } else{result=depth;}
+//    if(root->left== nullptr and root->right == nullptr){
+//        return;
+//    }
+//    if(root->left){
+//        depth+=1;
+//        getDepth(root->left, depth);
+//        depth-=1;
+//    }
+//    if(root->right){
+//        depth+=1;
+//        getDepth(root->right, depth);
+//        depth-=1;
+//    }
+//    return;
+//}
 int pre_order_maxDepth(TreeNode* root) {
     if(root == nullptr){return 0;}
     result=0;
