@@ -1038,6 +1038,37 @@ build day_thirty_one: CXX_EXECUTABLE_LINKER__day_thirty_one_Debug CMakeFiles/day
   TARGET_FILE = day_thirty_one
   TARGET_PDB = day_thirty_one.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target day_thirty_two
+
+
+#############################################
+# Order-only phony target for day_thirty_two
+
+build cmake_object_order_depends_target_day_thirty_two: phony || CMakeFiles/day_thirty_two.dir
+
+build CMakeFiles/day_thirty_two.dir/day_thirty_two/day_thirty_two.cpp.o: CXX_COMPILER__day_thirty_two_unscanned_Debug /Users/zhujunchi/Desktop/leecode/day_thirty_two/day_thirty_two.cpp || cmake_object_order_depends_target_day_thirty_two
+  DEP_FILE = CMakeFiles/day_thirty_two.dir/day_thirty_two/day_thirty_two.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/day_thirty_two.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_thirty_two.dir/day_thirty_two
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_thirty_two
+
+
+#############################################
+# Link the executable day_thirty_two
+
+build day_thirty_two: CXX_EXECUTABLE_LINKER__day_thirty_two_Debug CMakeFiles/day_thirty_two.dir/day_thirty_two/day_thirty_two.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/day_thirty_two.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_thirty_two
+  TARGET_PDB = day_thirty_two.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1073,7 +1104,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/zhujunchi/Desktop/leecode/cmake-build-debug
 
-build all: phony day_one day_two day_three day_three_recursive day_four day_six day_seven day_eight day_nine day_ten day_eleven day_twelve day_thirteen day_fourteen day_fifteen day_sixteen day_seventeen_tree2 day_seventeen_hash day_eighteen day_nineteen day_twenty day_twenty_one day_twenty_two day_twenty_three day_twenty_four day_twenty_five day_twenty_six day_twenty_seven day_twenty_eight day_twenty_nine day_thirty day_thirty_one
+build all: phony day_one day_two day_three day_three_recursive day_four day_six day_seven day_eight day_nine day_ten day_eleven day_twelve day_thirteen day_fourteen day_fifteen day_sixteen day_seventeen_tree2 day_seventeen_hash day_eighteen day_nineteen day_twenty day_twenty_one day_twenty_two day_twenty_three day_twenty_four day_twenty_five day_twenty_six day_twenty_seven day_twenty_eight day_twenty_nine day_thirty day_thirty_one day_thirty_two
 
 # =============================================================================
 # Built-in targets

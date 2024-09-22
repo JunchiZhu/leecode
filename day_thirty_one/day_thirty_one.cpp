@@ -26,23 +26,23 @@ bool isValid(string &address, int start, int end){
 }
 
 void backtracking(vector<string> &answer, string &s, int start,int dot_count){
-    if(dot_count == 3){
+    if(dot_count==3){
         if(isValid(s,start,s.size()-1)){
-//            cout<<s<<" "<<start<<" "<<s.size()-1<<endl;
             answer.push_back(s);
         }
         return;
     }
-
-    for(int end=start;end<s.size();++end){
+    for(int end = start;end<s.size();++end){
         if(isValid(s,start,end)){
             auto iter = s.begin()+end+1;
-            s.insert(iter,1,'.');
+            s.insert(iter,'.');
             dot_count+=1;
-            backtracking(answer, s,  end+2, dot_count);
+            backtracking(answer,s,end+2,dot_count);
             dot_count-=1;
             s.erase(iter);
-        } else{ break;}
+        }else{
+            break;
+        }
     }
 }
 
@@ -77,7 +77,7 @@ void backtracking2(vector<vector<int>>&answer,vector<int>&path,vector<int>& nums
             continue;
         }
         path.push_back(nums[i]);
-        backtracking(answer,path,nums,i+1);
+        backtracking2(answer,path,nums,i+1);
         path.pop_back();
     }
 }
@@ -89,11 +89,13 @@ vector<vector<int>> subsetsWithDup(vector<int>& nums) {
     return answer;
 }
 int main(){
-//    cout<<isValid((string &) "2551", 0, 4)<<endl;
-//    string s = "25525511135";
-//    vector_printer(restoreIpAddresses(s));
+    cout<<isValid((string &) "2551", 0, 4)<<endl;
+    string s = "25525511135";
+    vector_printer(restoreIpAddresses(s));
 
-    vector<int>nums = {1,2,3};
+    vector<int>nums = {1,2,2};
     matrix_printer(subsets(nums));
+    cout<<endl;
+    matrix_printer(subsetsWithDup(nums));
     return 0;
 }
