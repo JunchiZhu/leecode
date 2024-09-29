@@ -122,3 +122,12 @@ add_executable(day_thirty_two day_thirty_two/day_thirty_two.cpp
 
 add_executable(day_thirty_three day_thirty_three/day_thirty_three.cpp
         helper.h)
+
+add_executable(day_thirty_four day_thirty_four/day_thirty_four.cpp
+        helper.h)
+
+add_executable(day_thirty_five day_thirty_five/day_thirty_five.cpp
+        helper.h)
+
+add_executable(sorts sorts/sort_algorithms.cpp
+        helper.h)

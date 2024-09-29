@@ -1100,6 +1100,99 @@ build day_thirty_three: CXX_EXECUTABLE_LINKER__day_thirty_three_Debug CMakeFiles
   TARGET_FILE = day_thirty_three
   TARGET_PDB = day_thirty_three.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target day_thirty_four
+
+
+#############################################
+# Order-only phony target for day_thirty_four
+
+build cmake_object_order_depends_target_day_thirty_four: phony || CMakeFiles/day_thirty_four.dir
+
+build CMakeFiles/day_thirty_four.dir/day_thirty_four/day_thirty_four.cpp.o: CXX_COMPILER__day_thirty_four_unscanned_Debug /Users/zhujunchi/Desktop/leecode/day_thirty_four/day_thirty_four.cpp || cmake_object_order_depends_target_day_thirty_four
+  DEP_FILE = CMakeFiles/day_thirty_four.dir/day_thirty_four/day_thirty_four.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/day_thirty_four.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_thirty_four.dir/day_thirty_four
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_thirty_four
+
+
+#############################################
+# Link the executable day_thirty_four
+
+build day_thirty_four: CXX_EXECUTABLE_LINKER__day_thirty_four_Debug CMakeFiles/day_thirty_four.dir/day_thirty_four/day_thirty_four.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/day_thirty_four.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_thirty_four
+  TARGET_PDB = day_thirty_four.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_thirty_five
+
+
+#############################################
+# Order-only phony target for day_thirty_five
+
+build cmake_object_order_depends_target_day_thirty_five: phony || CMakeFiles/day_thirty_five.dir
+
+build CMakeFiles/day_thirty_five.dir/day_thirty_five/day_thirty_five.cpp.o: CXX_COMPILER__day_thirty_five_unscanned_Debug /Users/zhujunchi/Desktop/leecode/day_thirty_five/day_thirty_five.cpp || cmake_object_order_depends_target_day_thirty_five
+  DEP_FILE = CMakeFiles/day_thirty_five.dir/day_thirty_five/day_thirty_five.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/day_thirty_five.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_thirty_five.dir/day_thirty_five
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_thirty_five
+
+
+#############################################
+# Link the executable day_thirty_five
+
+build day_thirty_five: CXX_EXECUTABLE_LINKER__day_thirty_five_Debug CMakeFiles/day_thirty_five.dir/day_thirty_five/day_thirty_five.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/day_thirty_five.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_thirty_five
+  TARGET_PDB = day_thirty_five.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sorts
+
+
+#############################################
+# Order-only phony target for sorts
+
+build cmake_object_order_depends_target_sorts: phony || CMakeFiles/sorts.dir
+
+build CMakeFiles/sorts.dir/sorts/sort_algorithms.cpp.o: CXX_COMPILER__sorts_unscanned_Debug /Users/zhujunchi/Desktop/leecode/sorts/sort_algorithms.cpp || cmake_object_order_depends_target_sorts
+  DEP_FILE = CMakeFiles/sorts.dir/sorts/sort_algorithms.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/sorts.dir
+  OBJECT_FILE_DIR = CMakeFiles/sorts.dir/sorts
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sorts
+
+
+#############################################
+# Link the executable sorts
+
+build sorts: CXX_EXECUTABLE_LINKER__sorts_Debug CMakeFiles/sorts.dir/sorts/sort_algorithms.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
+  OBJECT_DIR = CMakeFiles/sorts.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sorts
+  TARGET_PDB = sorts.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1135,7 +1228,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/zhujunchi/Desktop/leecode/cmake-build-debug
 
-build all: phony day_one day_two day_three day_three_recursive day_four day_six day_seven day_eight day_nine day_ten day_eleven day_twelve day_thirteen day_fourteen day_fifteen day_sixteen day_seventeen_tree2 day_seventeen_hash day_eighteen day_nineteen day_twenty day_twenty_one day_twenty_two day_twenty_three day_twenty_four day_twenty_five day_twenty_six day_twenty_seven day_twenty_eight day_twenty_nine day_thirty day_thirty_one day_thirty_two day_thirty_three
+build all: phony day_one day_two day_three day_three_recursive day_four day_six day_seven day_eight day_nine day_ten day_eleven day_twelve day_thirteen day_fourteen day_fifteen day_sixteen day_seventeen_tree2 day_seventeen_hash day_eighteen day_nineteen day_twenty day_twenty_one day_twenty_two day_twenty_three day_twenty_four day_twenty_five day_twenty_six day_twenty_seven day_twenty_eight day_twenty_nine day_thirty day_thirty_one day_thirty_two day_thirty_three day_thirty_four day_thirty_five sorts
 
 # =============================================================================
 # Built-in targets
