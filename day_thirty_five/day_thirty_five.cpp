@@ -84,7 +84,21 @@ int largestSumAfterKNegations(vector<int>& nums, int k) {
     return answer;
 }
 
-
+//int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+//    for(int i=0;i<gas.size();++i){
+//        int remain = gas[i]-cost[i];
+//
+//        int circle_index = (i+1)%gas.size();
+//        while(remain>0 and i!=circle_index){
+//            remain += gas[circle_index]-cost[circle_index];
+//            circle_index = (circle_index+1)%gas.size();
+//        }
+//        if(remain>=0 &&circle_index==i){
+//            return i;
+//        }
+//    }
+//    return -1;
+//}
 
 
 int main(){
@@ -94,5 +108,8 @@ int main(){
     vector<int> q4_input = {3,-1,0,2};
     cout<<largestSumAfterKNegations(q4_input,3);
     cout<<kthCharacter(5)<<endl;
+    vector<int> gas = {2, 3, 4};
+    vector<int> cost = {3, 4, 3};
+
     return 0;
 }
