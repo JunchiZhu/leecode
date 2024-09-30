@@ -135,5 +135,9 @@ add_executable(day_thirty_six day_thirty_six/day_thirty_six.cpp
 add_executable(day_thirty_seven day_thirty_seven/day_thirty_seven.cpp
         helper.h)
 
+add_executable(day_thirty_eight day_thirty_eight/day_thirty_eight.cpp
+        helper.h)
+
+
 add_executable(sorts sorts/sort_algorithms.cpp
         helper.h)
