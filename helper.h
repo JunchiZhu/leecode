@@ -17,6 +17,7 @@
 #include <cmath>
 #include <algorithm>
 #include <list>
+#include <numeric>
 
 using namespace std;
 template <typename T>
