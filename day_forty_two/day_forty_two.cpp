@@ -96,17 +96,34 @@ int findMaxForm(vector<string>& strs, int m, int n) {
     return dp[m][n];
 }
 
+int findTargetSumWays_2(vector<int>& nums, int target) {
+    int sum = 0;
+    for (int i = 0; i < nums.size(); i++) sum += nums[i];
+    if (abs(target) > sum) return 0; // 此时没有方案
+    if ((target + sum) % 2 == 1) return 0; // 此时没有方案
+    int bagSize = (target + sum) / 2;
+    vector<int> dp(bagSize + 1, 0);
+    dp[0] = 1;
+    for (int num : nums) {
+        for (int j = bagSize; j >= num; j--) {
+            dp[j] += dp[j - num];
+        }
+    }
+    vector_printer(dp);
+    return dp[bagSize];
+}
+
 int main(){
 //    vector<int>stones{1,1,4,2,2};
 //    cout<<lastStoneWeightII_two_dimension(stones)<<endl;
-//    vector<int>nums{1,1,1,1,1};
-//    cout<<findTargetSumWays(nums, 3);
+    vector<int>nums{1,1,1,1,1};
+    cout<<findTargetSumWays_2(nums, 3);
 
-    vector<string> strs = {"11000001", "10", "0001", "1", "0"};
-    int m = 5;  // maximum zeros
-    int n = 3;  // maximum ones
-    int result = findMaxForm(strs, m, n);
-    cout << "Test Case 1: " << result << endl;  // Expected output: 4
+//    vector<string> strs = {"11000001", "10", "0001", "1", "0"};
+//    int m = 5;  // maximum zeros
+//    int n = 3;  // maximum ones
+//    int result = findMaxForm(strs, m, n);
+//    cout << "Test Case 1: " << result << endl;  // Expected output: 4
 
     return 0;
 }
