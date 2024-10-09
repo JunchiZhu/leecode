@@ -42,6 +42,7 @@
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_forty_one.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_forty_two.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_forty_three.dir
+/Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/day_forty_four.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/sorts.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/zhujunchi/Desktop/leecode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
